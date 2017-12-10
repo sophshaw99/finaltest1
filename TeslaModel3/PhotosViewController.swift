@@ -8,28 +8,36 @@
 
 import UIKit
 
-class PhotosViewController: UIViewController {
+class PhotosViewController: UIViewController, UICollectionViewDelegate {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+       
+    let photoDataSource = PhotoDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        collectionView.delegate = self
+        collectionView.dataSource = photoDataSource
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        switch segue.identifier {
+        case "showPhoto"?:
+            if let selectedIndexPath = collectionView.indexPathsForSelectedItems?.first {
+                let photo = photoDataSource.images[selectedIndexPath.row]
+                let destinationVC = segue.destination as! PhotoInfoViewController
+                
+                destinationVC.image = photo
+            }
+        default:
+            preconditionFailure("Unexpected segue identifier")
+        }
     }
-    */
 
 }

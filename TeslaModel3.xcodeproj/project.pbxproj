@@ -14,6 +14,13 @@
 		92D91E141FD3B63400BC3DA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D91E121FD3B63400BC3DA5 /* LaunchScreen.storyboard */; };
 		92D91E1F1FD3B63500BC3DA5 /* TeslaModel3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D91E1E1FD3B63500BC3DA5 /* TeslaModel3Tests.swift */; };
 		92D91E2A1FD3B63500BC3DA5 /* TeslaModel3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D91E291FD3B63500BC3DA5 /* TeslaModel3UITests.swift */; };
+		92D91E401FD5E48C00BC3DA5 /* ConfigureOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D91E3F1FD5E48C00BC3DA5 /* ConfigureOptionsTableViewController.swift */; };
+		92D91E421FD6160100BC3DA5 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D91E411FD6160100BC3DA5 /* WebView.swift */; };
+		92D91E5C1FDA3DAF00BC3DA5 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D91E5B1FDA3DAF00BC3DA5 /* PhotoDataSource.swift */; };
+		92D91E5E1FDA426100BC3DA5 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D91E5D1FDA426100BC3DA5 /* PhotosViewController.swift */; };
+		92D91E641FDA4AF700BC3DA5 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D91E631FDA4AF700BC3DA5 /* PhotoCollectionViewCell.swift */; };
+		92D91E661FDA4EDD00BC3DA5 /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D91E651FDA4EDD00BC3DA5 /* PhotoInfoViewController.swift */; };
+		92D91E681FDB50CC00BC3DA5 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D91E671FDB50CC00BC3DA5 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		92D91E251FD3B63500BC3DA5 /* TeslaModel3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeslaModel3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D91E291FD3B63500BC3DA5 /* TeslaModel3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaModel3UITests.swift; sourceTree = "<group>"; };
 		92D91E2B1FD3B63500BC3DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D91E3F1FD5E48C00BC3DA5 /* ConfigureOptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureOptionsTableViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		92D91E411FD6160100BC3DA5 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		92D91E5B1FDA3DAF00BC3DA5 /* PhotoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		92D91E5D1FDA426100BC3DA5 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		92D91E631FDA4AF700BC3DA5 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		92D91E651FDA4EDD00BC3DA5 /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
+		92D91E671FDB50CC00BC3DA5 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +112,14 @@
 			isa = PBXGroup;
 			children = (
 				92D91E091FD3B63400BC3DA5 /* AppDelegate.swift */,
-				92D91E0B1FD3B63400BC3DA5 /* ViewController.swift */,
 				92D91E0D1FD3B63400BC3DA5 /* Main.storyboard */,
 				92D91E101FD3B63400BC3DA5 /* Assets.xcassets */,
 				92D91E121FD3B63400BC3DA5 /* LaunchScreen.storyboard */,
 				92D91E151FD3B63400BC3DA5 /* Info.plist */,
+				92D91E0B1FD3B63400BC3DA5 /* ViewController.swift */,
+				92D91E411FD6160100BC3DA5 /* WebView.swift */,
+				92D91E6C1FDBCB8500BC3DA5 /* Calculator */,
+				92D91E6B1FDBCB4800BC3DA5 /* Gallery */,
 			);
 			path = TeslaModel3;
 			sourceTree = "<group>";
@@ -123,6 +140,26 @@
 				92D91E2B1FD3B63500BC3DA5 /* Info.plist */,
 			);
 			path = TeslaModel3UITests;
+			sourceTree = "<group>";
+		};
+		92D91E6B1FDBCB4800BC3DA5 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				92D91E5B1FDA3DAF00BC3DA5 /* PhotoDataSource.swift */,
+				92D91E5D1FDA426100BC3DA5 /* PhotosViewController.swift */,
+				92D91E631FDA4AF700BC3DA5 /* PhotoCollectionViewCell.swift */,
+				92D91E651FDA4EDD00BC3DA5 /* PhotoInfoViewController.swift */,
+			);
+			name = Gallery;
+			sourceTree = "<group>";
+		};
+		92D91E6C1FDBCB8500BC3DA5 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				92D91E3F1FD5E48C00BC3DA5 /* ConfigureOptionsTableViewController.swift */,
+				92D91E671FDB50CC00BC3DA5 /* CalculatorViewController.swift */,
+			);
+			name = Calculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +230,7 @@
 				TargetAttributes = {
 					92D91E051FD3B63400BC3DA5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					92D91E191FD3B63400BC3DA5 = {
@@ -259,7 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D91E5E1FDA426100BC3DA5 /* PhotosViewController.swift in Sources */,
+				92D91E641FDA4AF700BC3DA5 /* PhotoCollectionViewCell.swift in Sources */,
+				92D91E421FD6160100BC3DA5 /* WebView.swift in Sources */,
+				92D91E401FD5E48C00BC3DA5 /* ConfigureOptionsTableViewController.swift in Sources */,
+				92D91E661FDA4EDD00BC3DA5 /* PhotoInfoViewController.swift in Sources */,
+				92D91E5C1FDA3DAF00BC3DA5 /* PhotoDataSource.swift in Sources */,
 				92D91E0C1FD3B63400BC3DA5 /* ViewController.swift in Sources */,
+				92D91E681FDB50CC00BC3DA5 /* CalculatorViewController.swift in Sources */,
 				92D91E0A1FD3B63400BC3DA5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,11 +459,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TeslaModel3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SS.TeslaModel3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -426,11 +474,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TeslaModel3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SS.TeslaModel3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -507,6 +557,7 @@
 				92D91E301FD3B63500BC3DA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92D91E311FD3B63500BC3DA5 /* Build configuration list for PBXNativeTarget "TeslaModel3Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +566,7 @@
 				92D91E331FD3B63500BC3DA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92D91E341FD3B63500BC3DA5 /* Build configuration list for PBXNativeTarget "TeslaModel3UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +575,7 @@
 				92D91E361FD3B63500BC3DA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
